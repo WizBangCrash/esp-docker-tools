@@ -18,8 +18,6 @@ RUN su docker -c " \
     cd /build/esp-open-sdk ; \
     make STANDALONE=n ; \
 "
-# Clean out large and now unnecessary crosstool-NG build area
-RUN rm -rf /build/esp/esp-open-sdk/crosstool-NG
 
 FROM ubuntu:16.04
 
